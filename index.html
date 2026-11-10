@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<title>RAXI WIN PROFIT HACK — AI PREDICTOR</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@600;700;800&family=Poppins:wght@500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --raxi-red:#ff0d32;
+  --raxi-dark-red:#630412;
+  --raxi-gold:#ffb703;
+  --raxi-gold-glow:#ffd166;
+  --raxi-bg:#0a0204;
+  --raxi-card-bg:radial-gradient(ellipse at 50% 15%, #26040a 0%, #100204 60%, #050102 100%);
+  --raxi-border:rgba(255, 30, 60, 0.55);
+  --font-tech:'Orbitron', sans-serif;
+  --font-raj:'Rajdhani', sans-serif;
+  --font-ui:'Poppins', sans-serif;
+  --font-mono:'Share Tech Mono', monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;background:#000;font-family:var(--font-raj);color:#fff}
+
+body::before{
+  content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:radial-gradient(circle at 50% 30%, rgba(255,13,50,.18), transparent 60%),
+                   radial-gradient(circle at 80% 80%, rgba(255,183,3,.08), transparent 50%),
+                   repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(255,20,50,.018) 2px, rgba(255,20,50,.018) 4px);
+}
+
+/* ================= ULTRA REALISTIC HACKER OPENING LOADER ================= */
+#spiderLoader{
+  position:fixed;inset:0;z-index:99999;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  overflow:hidden;background:#030001;
+  transition:opacity .6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.loader-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,13,50,.06) 1px, transparent 1px),
+                   linear-gradient(90deg, rgba(255,13,50,.06) 1px, transparent 1px);
+  background-size:24px 24px;
+  pointer-events:none;
+}
+.loader-scanbeam{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 0%, rgba(255,13,50,.15) 50%, transparent 100%);
+  height:40%;
+  animation:scanBeamSweep 3s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes scanBeamSweep{
+  0%{top:-40%}
+  100%{top:100%}
+}
+
+.hack-terminal-frame{
+  position:relative;z-index:3;
+  width:min(440px, 92vw);
+  background:linear-gradient(180deg, rgba(20,3,7,.98) 0%, rgba(5,1,2,.99) 100%);
+  border:1.5px solid rgba(255,183,3,.5);
+  border-radius:12px;
+  box-shadow:0 0 50px rgba(255,13,50,.4), inset 0 0 20px rgba(0,0,0,.9);
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.hack-top-bar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:8px 12px;
+  background:linear-gradient(90deg, rgba(255,13,50,.25), rgba(20,2,5,.8));
+  border-bottom:1px solid rgba(255,183,3,.3);
+}
+.hack-title-hud{
+  font-family:var(--font-tech);font-size:10px;font-weight:900;
+  color:#ffd166;letter-spacing:1.5px;
+  display:flex;align-items:center;gap:6px;
+}
+.hack-dot-pulse{
+  width:7px;height:7px;border-radius:50%;
+  background:#ff0d32;box-shadow:0 0 8px #ff0d32;
+  animation:pulseFast .6s infinite alternate;
+}
+@keyframes pulseFast{0%{opacity:.3}100%{opacity:1}}
+
+.hack-ip-target{
+  font-family:var(--font-mono);font-size:9px;color:#a89195;letter-spacing:0.5px;
+}
+
+.hack-console-body{
+  padding:10px 12px;
+  height:170px;
+  overflow:hidden;
+  font-family:var(--font-mono);
+  font-size:9.5px;
+  line-height:1.5;
+  color:#4ade80;
+  display:flex;flex-direction:column;
+  justify-content:flex-end;
+  background:rgba(0,0,0,.92);
+  text-shadow:0 0 5px rgba(74,222,128,.5);
+  border-bottom:1px solid rgba(255,20,50,.2);
+}
+.console-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.console-line.crit{color:#f87171;text-shadow:0 0 6px #ef4444}
+.console-line.gold{color:#ffd166;text-shadow:0 0 6px #ffb703}
+
+.hack-stats-strip{
+  display:grid;grid-template-columns:repeat(3, 1fr);
+  padding:6px 12px;gap:6px;
+  background:rgba(12,2,4,.95);
+  border-bottom:1px solid rgba(255,183,3,.2);
+}
+.hack-stat-col{text-align:center}
+.stat-k{font-family:var(--font-tech);font-size:7px;color:#8f797d;letter-spacing:1px}
+.stat-v{font-family:var(--font-mono);font-size:10px;font-weight:900;color:#ffd166}
+
+.hack-progress-bar-wrap{
+  padding:8px 12px 10px;
+  display:flex;flex-direction:column;gap:5px;
+  background:rgba(8,1,2,.98);
+}
+.progress-meta{display:flex;justify-content:space-between;align-items:center}
+.meta-status{font-family:var(--font-tech);font-size:8px;color:#ff4d6d;letter-spacing:1px;font-weight:800}
+.meta-pct{font-family:var(--font-mono);font-size:11px;color:#ffd166;font-weight:900}
+.hack-bar-track{
+  width:100%;height:5px;background:rgba(255,255,255,.08);
+  border-radius:6px;overflow:hidden;
+}
+.hack-bar-fill{
+  width:0%;height:100%;
+  background:linear-gradient(90deg, #ff0d32, #ffb703, #22c55e);
+  box-shadow:0 0 10px #ff0d32;
+  transition:width .12s linear;
+}
+
+/* ================= MAINTENANCE ================= */
+#maintenanceLock{position:fixed;inset:0;z-index:1000000;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(3,1,2,.98);backdrop-filter:blur(6px)}
+#maintenanceLock.show{display:flex}
+.lock-card{max-width:320px;width:100%;padding:25px 18px;text-align:center;border:1px solid rgba(255,183,3,.45);border-radius:18px;background:linear-gradient(150deg,#1e0409,#070102);box-shadow:0 0 35px rgba(255,13,50,.3)}
+.lock-icon{font-size:44px;margin-bottom:10px;animation:spin 3s linear infinite;display:inline-block}
+@keyframes spin{100%{transform:rotate(360deg)}}
+.lock-title{font-family:var(--font-tech);font-size:16px;font-weight:900;color:var(--raxi-gold);margin-bottom:8px}
+.lock-msg{font-size:12.5px;color:#ddd;line-height:1.5;margin-bottom:14px}
+.lock-btn{padding:8px 20px;border-radius:8px;border:none;background:linear-gradient(135deg,#ffb703,#f97316);color:#000;font-family:var(--font-tech);font-size:10.5px;font-weight:900;cursor:pointer}
+
+/* ================= MAIN WRAPPER & IFRAME ================= */
+#mainApp{position:fixed;inset:0;width:100%;height:100%;overflow:hidden}
+#gameIframe{width:100%;height:100%;border:none;background:#111;display:block}
+
+/* ================= COMPACT FLOATING PANEL (276px) ================= */
+#topPanel{
+  position:fixed;
+  top:calc(8px + env(safe-area-inset-top,0px));
+  left:calc(50% - 138px);
+  width:276px;
+  z-index:900;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  user-select:none;
+  -webkit-user-select:none;
+  touch-action:none;
+  cursor:grab;
+  transition:transform .2s ease, opacity .2s ease;
+}
+#topPanel.dragging{cursor:grabbing;transform:scale(1.02);filter:drop-shadow(0 15px 30px rgba(0,0,0,.9))}
+#topPanel.minimized .raxi-main-card{display:none}
+
+/* Top Capsule Bar with CIRCULAR PROFIT HACK BADGE */
+.raxi-top-capsule{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:3px 8px;
+  background:linear-gradient(180deg, #dd112c 0%, #a0071c 45%, #62020f 100%);
+  border:1.2px solid #ff4d6d;
+  border-radius:24px;
+  box-shadow:0 4px 12px rgba(0,0,0,.85), 0 0 12px rgba(255,13,50,.45), inset 0 1px 2px rgba(255,255,255,.4);
+  position:relative;
+}
+.raxi-top-left-brand{
+  font-family:var(--font-tech);
+  font-size:9.5px;
+  font-weight:900;
+  letter-spacing:1px;
+  color:#ffffff;
+  text-shadow:0 0 5px rgba(0,0,0,.9);
+  padding-left:4px;
+}
+
+/* ================= CIRCULAR PROFIT HACK BADGE ================= */
+.profit-hack-circle{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 35%, #ff2a4b, #96061a 65%, #2a0207 100%);
+  border:1.5px solid #ffd166;
+  box-shadow:0 0 12px rgba(255,183,3,.75), inset 0 0 6px rgba(0,0,0,.85);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  line-height:1.05;
+  flex-shrink:0;
+  position:relative;
+  margin:0 auto;
+}
+.profit-hack-circle::before{
+  content:'';
+  position:absolute;
+  inset:-3px;
+  border-radius:50%;
+  border:1px dashed rgba(255,209,102,.7);
+  animation:spin 12s linear infinite;
+  pointer-events:none;
+}
+.ph-line1{
+  font-family:var(--font-tech);
+  font-size:6.2px;
+  font-weight:900;
+  color:#ffffff;
+  letter-spacing:0.6px;
+  text-shadow:0 1px 2px rgba(0,0,0,.9);
+}
+.ph-line2{
+  font-family:var(--font-tech);
+  font-size:7px;
+  font-weight:900;
+  color:#ffd166;
+  letter-spacing:0.8px;
+  text-shadow:0 0 6px rgba(255,183,3,.9);
+}
+
+.raxi-min-btn{
+  width:20px;height:18px;
+  border-radius:6px;
+  background:linear-gradient(180deg, #3d050a, #1a0104);
+  border:1px solid rgba(255,180,190,.3);
+  color:#fff;font-family:var(--font-tech);
+  font-size:11px;font-weight:900;
+  display:grid;place-items:center;
+  cursor:pointer;line-height:1;
+  flex-shrink:0;
+}
+
+/* Main Box Body — LIGHTWEIGHT */
+.raxi-main-card{
+  background:var(--raxi-card-bg);
+  border:1.5px solid var(--raxi-border);
+  border-radius:16px;
+  padding:7px 8px 8px;
+  box-shadow:0 10px 28px rgba(0,0,0,.9), 0 0 20px rgba(255,13,50,.22), inset 0 0 16px rgba(255,0,30,.13);
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Header: Logo & Integrated Shift Switch */
+.raxi-header-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 1px;
+}
+.raxi-brand-logo{
+  display:flex;align-items:center;gap:2px;
+}
+.raxi-crown{
+  font-size:14px;line-height:1;filter:drop-shadow(0 0 5px #ffd166);
+  transform:translateY(-1px);
+}
+.raxi-brand-text{
+  font-family:var(--font-tech);
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:0.6px;
+  background:linear-gradient(180deg, #ffffff 0%, #ffc837 35%, #e04400 70%, #901000 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 2px 3px rgba(0,0,0,.9));
+  font-style:italic;
+  line-height:1;
+}
+.raxi-brand-text span{
+  font-size:7.5px;font-style:normal;letter-spacing:0.3px;
+  color:#ffd166;-webkit-background-clip:unset;background-clip:unset;
+  margin-left:1px;
+}
+
+/* HIGH-ENERGY SHIFT TOGGLE */
+.raxi-shift-toggle{
+  display:flex;align-items:center;
+  background:linear-gradient(180deg, #1b0307, #080102);
+  border:1px solid rgba(255,183,3,.45);
+  border-radius:14px;
+  padding:1.5px;
+  gap:1.5px;
+  box-shadow:inset 0 0 7px rgba(0,0,0,.9), 0 0 8px rgba(255,13,50,.22);
+  position:relative;
+}
+.shift-btn{
+  background:transparent;
+  border:none;
+  color:#947b7f;
+  font-family:var(--font-tech);
+  font-size:7px;
+  font-weight:900;
+  padding:3px 6.5px;
+  border-radius:11px;
+  cursor:pointer;
+  transition:all .25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  line-height:1;
+  position:relative;
+  overflow:hidden;
+}
+.shift-btn.active{
+  background:linear-gradient(180deg, #ff1a3c, #96061a);
+  color:#ffffff;
+  box-shadow:0 0 10px rgba(255,13,50,.85), inset 0 1px 1px rgba(255,255,255,.5);
+}
+
+@keyframes shiftBurst {
+  0% { transform:scale(0.85); filter:brightness(2.2); }
+  50% { transform:scale(1.18); filter:brightness(2.6); box-shadow:0 0 20px rgba(255,183,3,1), 0 0 30px rgba(255,13,50,1); }
+  100% { transform:scale(1); filter:brightness(1); }
+}
+@keyframes shiftRingPulse {
+  0% { transform:scale(0.6); opacity:1; }
+  100% { transform:scale(2.4); opacity:0; }
+}
+.shift-btn.burst-anim {
+  animation:shiftBurst .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+.shift-btn.burst-anim::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  border:2px solid #ffd166;
+  animation:shiftRingPulse .55s ease-out forwards;
+  pointer-events:none;
+}
+
+/* System Row Pill */
+.raxi-sys-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:2.5px 7px;
+  border-radius:10px;
+  background:linear-gradient(180deg, rgba(35,5,10,.85), rgba(12,2,4,.95));
+  border:1px solid rgba(255,20,50,.35);
+  font-family:var(--font-tech);
+  font-size:6.8px;
+  font-weight:800;
+  color:#d4b2b6;
+  letter-spacing:0.5px;
+}
+.sys-col span{color:#fff;transition:color .2s}
+.live-badge{
+  display:flex;align-items:center;gap:3px;
+  color:#22c55e;font-weight:900;
+  text-shadow:0 0 8px rgba(34,197,94,.8);
+}
+.live-dot{
+  width:5px;height:5px;border-radius:50%;
+  background:#22c55e;box-shadow:0 0 7px #22c55e;
+  animation:liveGlow 1.2s infinite alternate;
+}
+@keyframes liveGlow{0%{opacity:.5;transform:scale(.9)}100%{opacity:1;transform:scale(1.2)}}
+
+/* Period ID & Timer Ring */
+.raxi-period-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 3px;
+  margin-bottom:0;
+}
+.raxi-period-id{
+  font-family:var(--font-tech);
+  font-size:9.5px;
+  font-weight:800;
+  letter-spacing:0.5px;
+  color:#dfcfcf;
+}
+.raxi-timer-badge{
+  position:relative;
+  width:31px;height:31px;
+  border-radius:50%;
+  background:radial-gradient(circle, #250308 50%, #000 100%);
+  border:2px solid #ffb703;
+  display:grid;place-items:center;
+  box-shadow:0 0 10px rgba(255,183,3,.6), inset 0 0 5px rgba(0,0,0,.9);
+  flex-shrink:0;
+}
+.raxi-timer-num{
+  font-family:var(--font-tech);
+  font-size:10.5px;
+  font-weight:900;
+  color:#ffffff;
+  text-shadow:0 0 5px #ff0d32, 0 0 8px #ffb703;
+  font-variant-numeric:tabular-nums;
+}
+
+/* AI PREDICTION Display Box */
+.raxi-pred-box{
+  background:linear-gradient(180deg, #090103 0%, #030001 100%);
+  border:1px solid rgba(255,183,3,.3);
+  border-radius:9px;
+  padding:5px 3px 6px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  box-shadow:inset 0 0 13px rgba(0,0,0,.95), 0 0 10px rgba(255,13,50,.13);
+  position:relative;
+  overflow:hidden;
+}
+.pred-tag-title{
+  font-family:var(--font-tech);
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:1.6px;
+  color:#f1e4e6;
+  text-shadow:0 0 7px rgba(255,255,255,.5);
+  margin-bottom:0;
+}
+.pred-main-result{
+  font-family:var(--font-tech);
+  font-size:23px;
+  font-weight:900;
+  letter-spacing:2px;
+  line-height:1.1;
+  text-transform:uppercase;
+  min-height:26px;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .15s ease;
+}
+.pred-main-result.LOCKED{
+  font-size:13px;
+  color:#a33b4d;
+  letter-spacing:1.5px;
+  animation:lockPulse 1.4s infinite alternate;
+}
+@keyframes lockPulse{0%{opacity:.6}100%{opacity:1;filter:drop-shadow(0 0 6px #ff1a3c)}}
+
+/* 2-Second Hack Scramble Glitch in Prediction Box */
+.pred-main-result.hack-scramble{
+  font-family:var(--font-mono) !important;
+  font-size:14px !important;
+  color:#22c55e !important;
+  letter-spacing:1.5px !important;
+  text-shadow:0 0 10px #22c55e, 0 0 20px #ff0d32;
+  animation:cyberFlicker .1s infinite alternate;
+}
+@keyframes cyberFlicker{
+  0%{transform:scale(1) skew(0deg);filter:hue-rotate(0deg)}
+  50%{transform:scale(1.05) skew(2deg);filter:hue-rotate(90deg)}
+  100%{transform:scale(0.98) skew(-2deg);filter:hue-rotate(180deg)}
+}
+
+.pred-main-result.WAIT{font-size:14px;color:#7e5e64;letter-spacing:1px}
+.pred-main-result.BIG{
+  background:linear-gradient(180deg, #ffffff 0%, #ffd166 40%, #ff9f1c 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 12px rgba(255,183,3,.9));
+}
+.pred-main-result.SMALL{
+  background:linear-gradient(180deg, #ffffff 0%, #ff5c77 40%, #ff0d32 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 12px rgba(255,13,50,.9));
+}
+
+/* 6 API Result 3D Lottery Balls Row */
+.raxi-balls-row{
+  display:grid;
+  grid-template-columns:repeat(6, 1fr);
+  gap:3px;
+  padding:1px 0;
+  align-items:center;
+  position:relative;
+}
+.lottery-ball-wrap{
+  aspect-ratio:1/1;
+  display:flex;align-items:center;justify-content:center;
+  filter:drop-shadow(0 3px 5px rgba(0,0,0,.65));
+  transition:transform .2s ease;
+}
+.lottery-ball-wrap svg{
+  width:100%;height:100%;display:block;
+}
+
+/* 2-SECOND JUMPING WAVE HACK ANIMATION FOR BALLS */
+@keyframes ballHackWave {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,.65)) brightness(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.14);
+    filter: drop-shadow(0 8px 14px rgba(255,13,50,1)) brightness(1.8) saturate(1.5);
+  }
+}
+
+.raxi-balls-row.hacking-active .lottery-ball-wrap:nth-child(1) { animation: ballHackWave 0.35s ease-in-out infinite 0.00s; }
+.raxi-balls-row.hacking-active .lottery-ball-wrap:nth-child(2) { animation: ballHackWave 0.35s ease-in-out infinite 0.07s; }
+.raxi-balls-row.hacking-active .lottery-ball-wrap:nth-child(3) { animation: ballHackWave 0.35s ease-in-out infinite 0.14s; }
+.raxi-balls-row.hacking-active .lottery-ball-wrap:nth-child(4) { animation: ballHackWave 0.35s ease-in-out infinite 0.21s; }
+.raxi-balls-row.hacking-active .lottery-ball-wrap:nth-child(5) { animation: ballHackWave 0.35s ease-in-out infinite 0.28s; }
+.raxi-balls-row.hacking-active .lottery-ball-wrap:nth-child(6) { animation: ballHackWave 0.35s ease-in-out infinite 0.35s; }
+
+/* Action Buttons (CLICK TO CONNECT & HIDE) */
+.raxi-action-row{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:6px;
+  margin-top:1px;
+}
+.btn-connect-action{
+  flex:1.2;
+  padding:6px 0;
+  border-radius:15px;
+  background:linear-gradient(180deg, #ff1a3c 0%, #a8051a 100%);
+  border:1.2px solid #ff7b91;
+  color:#ffffff;
+  font-family:var(--font-tech);
+  font-size:9.5px;
+  font-weight:900;
+  letter-spacing:0.7px;
+  cursor:pointer;
+  box-shadow:0 3px 12px rgba(255,13,50,.55), inset 0 1px 1px rgba(255,255,255,.5);
+  display:grid;place-items:center;
+  transition:all .2s ease;
+  white-space:nowrap;
+  position:relative;
+  overflow:hidden;
+}
+.btn-connect-action:active{transform:scale(.96)}
+.btn-connect-action.connected-freeze{
+  background:linear-gradient(180deg, #1b0307 0%, #0d0103 100%);
+  border-color:#22c55e;
+  color:#22c55e;
+  box-shadow:0 0 10px rgba(34,197,94,.4);
+  cursor:not-allowed;
+  pointer-events:none;
+}
+.btn-connect-action.connecting-pulse{
+  animation:connectBlink .25s infinite alternate;
+  background:linear-gradient(180deg, #ff7b91 0%, #ff0d32 100%);
+  color:#fff;
+  box-shadow:0 0 25px rgba(255,13,50,1);
+}
+@keyframes connectBlink{0%{filter:brightness(1) scale(0.98)}100%{filter:brightness(1.6) scale(1.02)}}
+
+.btn-hide{
+  flex:0.8;
+  padding:6px 0;
+  border-radius:15px;
+  background:linear-gradient(180deg, #26050b 0%, #0d0103 100%);
+  border:1.2px solid rgba(255,183,3,.4);
+  color:#ffffff;
+  font-family:var(--font-tech);
+  font-size:9.5px;
+  font-weight:900;
+  letter-spacing:0.7px;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:3px;
+  box-shadow:0 3px 10px rgba(0,0,0,.8);
+}
+.btn-hide:active{transform:scale(.96)}
+
+/* Level Stats Bar */
+.raxi-levels-bar{
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(20,3,7,.75);
+  padding:2px 7px;
+  border-radius:7px;
+  border:1px solid rgba(255,183,3,.25);
+  font-family:var(--font-tech);
+  font-size:6.6px;
+  color:#bda5a8;
+}
+.level-val{color:#ffd166;font-weight:900}
+
+/* ================= ATTRACTIVE RAXXI WIN ACCESS SECURITY INTERFACE ================= */
+#uidBox{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:12px 8px 12px;text-align:center;gap:7px;
+  background:linear-gradient(180deg, rgba(25,3,7,.92) 0%, rgba(10,1,3,.98) 100%);
+  border-radius:12px;
+  border:1px solid rgba(255,183,3,.35);
+  box-shadow:inset 0 0 18px rgba(0,0,0,.9), 0 0 12px rgba(255,13,50,.2);
+  position:relative;
+  overflow:hidden;
+}
+#uidBox::before{
+  content:'';position:absolute;top:-40%;left:-40%;width:80%;height:80%;
+  background:radial-gradient(circle, rgba(255,183,3,.15), transparent 70%);
+  pointer-events:none;
+}
+.uid-shield-wrap{
+  position:relative;
+  width:38px;height:38px;
+  display:grid;place-items:center;
+  margin-bottom:0;
+}
+.uid-shield-ring{
+  position:absolute;inset:0;
+  border-radius:50%;
+  border:2px dashed rgba(255,183,3,.6);
+  animation:spin 8s linear infinite;
+  box-shadow:0 0 8px rgba(255,183,3,.4);
+}
+.uid-shield-icon{
+  font-size:19px;
+  filter:drop-shadow(0 0 8px rgba(255,13,50,.9));
+  animation:shieldPulse 2s ease-in-out infinite;
+}
+@keyframes shieldPulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.12)}
+}
+.uid-security-badge{
+  display:inline-flex;align-items:center;gap:3px;
+  padding:2px 7px;border-radius:11px;
+  background:rgba(255,183,3,.12);
+  border:1px solid rgba(255,183,3,.4);
+  font-family:var(--font-tech);font-size:6px;
+  color:#ffd166;letter-spacing:0.8px;font-weight:900;
+}
+.uid-security-badge .dot{
+  width:4px;height:4px;border-radius:50%;
+  background:#22c55e;box-shadow:0 0 6px #22c55e;
+}
+
+.uid-title{
+  font-family:var(--font-tech);font-size:10px;font-weight:900;
+  letter-spacing:1px;color:#ffffff;
+  text-shadow:0 0 8px rgba(255,20,50,.8);
+}
+
+/* SUBTITLE IS HIDDEN AS REQUESTED */
+.uid-sub{
+  display:none !important;
+}
+
+/* BIG CYBER INPUT BOX */
+.uid-input-container{
+  position:relative;
+  width:100%;
+  max-width:236px;
+  margin:5px 0 3px;
+}
+.uid-corner{
+  position:absolute;width:6px;height:6px;
+  border-color:#ffb703;border-style:solid;
+  pointer-events:none;z-index:2;
+}
+.uid-corner.tl{top:-2px;left:-2px;border-width:2px 0 0 2px}
+.uid-corner.tr{top:-2px;right:-2px;border-width:2px 2px 0 0}
+.uid-corner.bl{bottom:-2px;left:-2px;border-width:0 0 2px 2px}
+.uid-corner.br{bottom:-2px;right:-2px;border-width:0 2px 2px 0}
+
+.uid-input{
+  width:100%;
+  background:rgba(0,0,0,.92);
+  border:1.6px solid rgba(255,183,3,.7);
+  border-radius:8px;
+  padding:10px 12px;
+  color:#ffd166;
+  font-family:var(--font-tech);
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-align:center;
+  outline:none;
+  box-shadow:inset 0 0 12px rgba(0,0,0,.95), 0 0 12px rgba(255,183,3,.25);
+  transition:all .2s ease;
+}
+.uid-input:focus{
+  border-color:#ffb703;
+  box-shadow:inset 0 0 10px rgba(0,0,0,.9), 0 0 18px rgba(255,183,3,.8);
+}
+.uid-input::placeholder{
+  color:#735459;font-size:9.5px;letter-spacing:1.2px;font-family:var(--font-tech);font-weight:700;
+}
+
+/* Cyber Metallic Verify Button */
+.uid-connect-btn{
+  width:100%;max-width:236px;
+  padding:8px 0;
+  border-radius:8px;
+  background:linear-gradient(180deg, #ff1a3c 0%, #aa061c 100%);
+  border:1.2px solid #ff7b91;
+  color:#ffffff;
+  font-family:var(--font-tech);
+  font-size:9.5px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  cursor:pointer;
+  box-shadow:0 3px 14px rgba(255,13,50,.7), inset 0 1px 1px rgba(255,255,255,.6);
+  transition:all .2s;
+  position:relative;
+  overflow:hidden;
+}
+.uid-connect-btn:active{transform:scale(.97)}
+
+.uid-msg{font-size:7px;font-weight:700;color:#ff5c77;min-height:9px}
+.uid-link{
+  display:inline-flex;align-items:center;gap:3px;
+  color:#ffd166;font-size:7px;text-decoration:none;font-weight:800;
+  padding:2.5px 7px;border-radius:11px;background:rgba(255,183,3,.1);
+  border:1px solid rgba(255,183,3,.3);
+  transition:all .2s;
+}
+.uid-link:active{background:rgba(255,183,3,.25)}
+
+/* Connecting State */
+#connectingState{
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  padding:14px;gap:7px;text-align:center;
+}
+#connectingState.show{display:flex}
+.conn-text{font-family:var(--font-tech);font-size:9px;font-weight:900;color:#ffd166}
+
+/* Error Alert Popup */
+#errorAlert{
+  position:absolute;inset:0;background:rgba(20,2,5,.96);
+  border-radius:16px;z-index:50;display:none;
+  flex-direction:column;align-items:center;justify-content:center;
+  padding:13px;text-align:center;gap:9px;
+}
+#errorAlert.show{display:flex}
+.error-msg-box{
+  font-family:var(--font-tech);font-size:8.5px;font-weight:900;
+  color:#fff;line-height:1.5;border:1px solid #ff1a3c;
+  padding:7px 9px;border-radius:9px;background:rgba(255,13,50,.15);
+}
+.error-ok-btn{
+  padding:4px 13px;border-radius:11px;background:#ff1a3c;
+  border:none;color:#fff;font-family:var(--font-tech);font-size:8px;
+  font-weight:900;cursor:pointer;
+}
+
+/* WINNING CONFIRMATION POPUP */
+.win-popup{
+  position:fixed;inset:0;z-index:999999;display:none;
+  align-items:center;justify-content:center;pointer-events:none;
+  background:radial-gradient(circle, rgba(255,183,3,.25), transparent 60%);
+}
+.win-popup.show{display:flex}
+.win-popup-card{
+  padding:25px 40px;border-radius:20px;
+  background:linear-gradient(160deg,#24040a,#080102);
+  border:2px solid #ffb703;box-shadow:0 0 50px rgba(255,183,3,.9);
+  text-align:center;
+}
+.win-trophy{font-size:52px;line-height:1;margin-bottom:6px}
+.win-text{font-family:var(--font-tech);font-size:18px;font-weight:900;color:#ffd166;letter-spacing:2px}
+</style>
+</head>
+<body>
+
+<!-- MAINTENANCE LOCK -->
+<div id="maintenanceLock">
+  <div class="lock-card">
+    <div class="lock-icon">⚙️</div>
+    <div class="lock-title">SYSTEM UPDATING</div>
+    <div class="lock-msg">The system is currently undergoing security upgrades. Please try again later.</div>
+    <button class="lock-btn" onclick="document.getElementById('maintenanceLock').classList.remove('show')">OK</button>
+  </div>
+</div>
+
+<!-- ================= ULTRA REALISTIC HACKER OPENING LOADER ================= -->
+<div id="spiderLoader">
+  <div class="loader-grid"></div>
+  <div class="loader-scanbeam"></div>
+  
+  <div class="hack-terminal-frame">
+    <!-- Top HUD Bar -->
+    <div class="hack-top-bar">
+      <div class="hack-title-hud">
+        <span class="hack-dot-pulse"></span>
+        <span>RAXXI SYSTEM BREACH // V4.8</span>
+      </div>
+      <div class="hack-ip-target">NODE: 104.21.72.18</div>
+    </div>
+
+    <!-- Live Terminal Stream -->
+    <div class="hack-console-body" id="hackConsole">
+      <div class="console-line">[INIT] SECURE GATEWAY HANDSHAKE INITIATED...</div>
+    </div>
+
+    <!-- Real-time Hacking Metric Stats -->
+    <div class="hack-stats-strip">
+      <div class="hack-stat-col">
+        <div class="stat-k">HASH RATE</div>
+        <div class="stat-v" id="hudHashRate">1.48 GH/s</div>
+      </div>
+      <div class="hack-stat-col">
+        <div class="stat-k">MEMORY SEED</div>
+        <div class="stat-v" id="hudMemSeed">0x7F21B9</div>
+      </div>
+      <div class="hack-stat-col">
+        <div class="stat-k">EXFILTRATED</div>
+        <div class="stat-v" id="hudExfil">48.2 MB</div>
+      </div>
+    </div>
+
+    <!-- Progress HUD -->
+    <div class="hack-progress-bar-wrap">
+      <div class="progress-meta">
+        <span class="meta-status" id="hackStatusText">EXTRACTING LIVE RNG STREAM...</span>
+        <span class="meta-pct" id="hackPercent">0%</span>
+      </div>
+      <div class="hack-bar-track">
+        <div class="hack-bar-fill" id="hackFill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN WORKSPACE -->
+<div id="mainApp">
+  <iframe id="gameIframe" title="Raxi Win Game"
+    src="https://flat-mode-b40e.vipulvlog9263945155.workers.dev/#/register?invitationCode=36786716490"
+    allow="fullscreen; clipboard-read; clipboard-write; payment"
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+  <!-- FLOATING PREDICTION PANEL -->
+  <div id="topPanel">
+    
+    <!-- Top Capsule Bar with CIRCULAR PROFIT HACK BADGE -->
+    <div class="raxi-top-capsule" id="panelDragHeader">
+      <div class="raxi-top-left-brand">RAXI WIN</div>
+      
+      <!-- CIRCULAR PROFIT HACK DESIGN -->
+      <div class="profit-hack-circle">
+        <span class="ph-line1">PROFIT</span>
+        <span class="ph-line2">HACK</span>
+      </div>
+
+      <button class="raxi-min-btn" id="minBtn" onclick="togglePanel()">—</button>
+    </div>
+
+    <!-- Main Card -->
+    <div class="raxi-main-card">
+      
+      <!-- Header Row (Logo + Integrated 30S/1M Shift) -->
+      <div class="raxi-header-row">
+        <div class="raxi-brand-logo">
+          <span class="raxi-crown">👑</span>
+          <div class="raxi-brand-text">RAXI<span>.WIN</span></div>
+        </div>
+        <div class="raxi-shift-toggle">
+          <button class="shift-btn" id="thirtySecBtn" onclick="switchMode('30sec')">30S</button>
+          <button class="shift-btn active" id="oneMinBtn" onclick="switchMode('1min')">1M</button>
+        </div>
+      </div>
+
+      <!-- System Status Bar -->
+      <div class="raxi-sys-row">
+        <div class="sys-col">SYS : <span>SECURE P...</span></div>
+        <div class="sys-col">MOD : <span id="modLabel">WINGO 1M</span></div>
+        <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+      </div>
+
+      <!-- ================= ATTRACTIVE RAXXI WIN ACCESS SECURITY INTERFACE ================= -->
+      <div id="uidBox">
+        <div class="uid-shield-wrap">
+          <div class="uid-shield-ring"></div>
+          <div class="uid-shield-icon">🛡️</div>
+        </div>
+        <div class="uid-security-badge"><span class="dot"></span>ENCRYPTED GATEWAY</div>
+        
+        <!-- RAXXI WIN ACCESS SECURITY KEPT -->
+        <div class="uid-title">RAXXI WIN ACCESS SECURITY</div>
+        
+        <!-- SUBTITLE HIDDEN -->
+        <div class="uid-sub">DECRYPTED ACCESS GATEWAY // ENTER UID</div>
+        
+        <!-- BIG ENTER UID INPUT -->
+        <div class="uid-input-container">
+          <span class="uid-corner tl"></span><span class="uid-corner tr"></span>
+          <span class="uid-corner bl"></span><span class="uid-corner br"></span>
+          <input type="text" id="uidInput" class="uid-input" placeholder="ENTER UID" inputmode="numeric" maxlength="10">
+        </div>
+
+        <!-- BUTTON RENAMED TO: Click to Verify -->
+        <button id="connectBtn" class="uid-connect-btn">Click to Verify</button>
+        <div id="uidMsg" class="uid-msg"></div>
+        <a href="https://t.me/myselfvipulkumar" target="_blank" class="uid-link">📢 CONTACT VIPUL BHAI</a>
+      </div>
+
+      <!-- Connecting State -->
+      <div id="connectingState">
+        <div class="conn-text" id="connectText">VERIFYING WITH SERVER...</div>
+      </div>
+
+      <!-- ================= VERIFIED ENGINE VIEW ================= -->
+      <div id="verifiedContent" style="display:none; flex-direction:column; gap:5px;">
+        
+        <!-- Period ID & Timer -->
+        <div class="raxi-period-row">
+          <div class="raxi-period-id" id="periodId">20261110100010000</div>
+          <div class="raxi-timer-badge">
+            <span class="raxi-timer-num" id="timer">--</span>
+          </div>
+        </div>
+
+        <!-- AI Prediction Box -->
+        <div class="raxi-pred-box">
+          <div class="pred-tag-title">AI PREDICTION</div>
+          <div class="pred-main-result LOCKED" id="predValue">LOCKED</div>
+        </div>
+
+        <!-- Levels Bar -->
+        <div class="raxi-levels-bar">
+          <div>CURRENT: <span class="level-val" id="currentLevelDisplay">L1</span></div>
+          <div>HIGHEST WIN: <span class="level-val" id="highestLevelDisplay">—</span></div>
+        </div>
+
+        <!-- 6 API Result 3D Lottery Balls Row -->
+        <div class="raxi-balls-row" id="ballsRow"></div>
+
+        <!-- Bottom Action Buttons (CLICK TO CONNECT & HIDE) -->
+        <div class="raxi-action-row">
+          <button class="btn-connect-action" id="hackConnectBtn" onclick="onConnectActionClick()">CLICK TO CONNECT</button>
+          <button class="btn-hide" onclick="togglePanel()">&#8856; HIDE</button>
+        </div>
+      </div>
+
+      <!-- Error Alert View -->
+      <div id="errorAlert">
+        <div style="font-size:28px">🚨</div>
+        <div class="error-msg-box">UID NOT APPROVED BY ADMIN<br>PLEASE CONTACT VIPUL BHAI</div>
+        <button class="error-ok-btn" onclick="closeErrorAlert()">OK</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WIN POPUP -->
+<div id="winPopup" class="win-popup">
+  <div class="win-popup-card">
+    <div class="win-trophy">🏆</div>
+    <div class="win-text">WIN CONFIRMED</div>
+  </div>
+</div>
+
+<!-- FIREBASE ACCESS CONTROL SCRIPT -->
+<script type="module">
+import { initializeApp, getApps } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+import { getDatabase, ref, onValue, set, remove, onDisconnect } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyBFdvXN8SAy77EDQp5HNykO5z2Wa0W8sb0',
+  authDomain: 'bdgrocky.firebaseapp.com',
+  databaseURL: 'https://bdgrocky-default-rtdb.asia-southeast1.firebasedatabase.app',
+  projectId: 'bdgrocky'
+};
+const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const settingsRef = ref(db, 'settings');
+const approvedRef = ref(db, 'approved_uids');
+
+let settingsCache = null, approvedCache = null;
+let sReady, aReady;
+window.accessControlReady = Promise.all([new Promise(r => sReady = r), new Promise(r => aReady = r)]);
+let loggedInUid = '';
+let sessionKey = 'sess_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+
+function uidKey(uid){ return String(uid||'').trim().replace(/[.#$\/\[\]]/g,'_'); }
+function isApproved(uid){
+  if(!approvedCache) return false;
+  const item = approvedCache[uidKey(uid)];
+  return !!(item && item.approved === true && String(item.uid||'').trim() === String(uid).trim());
+}
+
+window.verifyAdminAccess = async function(uid){
+  await window.accessControlReady;
+  if(settingsCache && settingsCache.maintenance === true) return {ok:false, reason:'SYSTEM UPDATING', errorType:'maintenance'};
+  if(!isApproved(uid)) return {ok:false, reason:'UID NOT APPROVED BY ADMIN', errorType:'not_approved'};
+  loggedInUid = String(uid).trim();
+  window.isVerified = true;
+  try {
+    const userRef = ref(db, 'active_users/' + sessionKey);
+    await set(userRef, { uid: loggedInUid, startedAt: Date.now() });
+    onDisconnect(userRef).remove().catch(()=>{});
+  }catch(_){}
+  return {ok:true};
+};
+
+onValue(settingsRef, s => {
+  settingsCache = s.exists() ? s.val() : {};
+  sReady();
+  if(settingsCache.maintenance === true){
+    document.getElementById('maintenanceLock').classList.add('show');
+  } else {
+    document.getElementById('maintenanceLock').classList.remove('show');
+  }
+});
+
+onValue(approvedRef, s => {
+  approvedCache = s.exists() ? s.val() : {};
+  aReady();
+});
+</script>
+
+<!-- APPLICATION LOGIC & BALL GRAPHICS -->
+<script>
+const $ = id => document.getElementById(id);
+let gameMode = '1min';
+let pollHandle = null, latestRows = [];
+let lastProcessedIssue = null;
+let busy = false;
+
+/* User Connection Hack State */
+let isCurrentPeriodUnlocked = false;
+let unlockedForIssue = null;
+let currentComputedPred = null;
+
+/* LAST REVEALED PREDICTION RETENTION (Old prediction stays until user clicks connect) */
+let lastRevealedPred = null;
+
+/* Dragging & Floating Panel */
+(function(){
+  const panel = $('topPanel');
+  const header = $('panelDragHeader');
+  let dragging = false, moved = false, startX = 0, startY = 0, startLeft = 0, startTop = 0;
+
+  header.addEventListener('pointerdown', e => {
+    if(e.target.closest('button')) return;
+    const r = panel.getBoundingClientRect();
+    panel.style.left = r.left + 'px';
+    panel.style.top = r.top + 'px';
+    dragging = true; moved = false;
+    startX = e.clientX; startY = e.clientY;
+    startLeft = r.left; startTop = r.top;
+    panel.classList.add('dragging');
+    try{ header.setPointerCapture(e.pointerId); }catch(_){}
+  });
+
+  window.addEventListener('pointermove', e => {
+    if(!dragging) return;
+    const dx = e.clientX - startX, dy = e.clientY - startY;
+    if(Math.abs(dx)>2 || Math.abs(dy)>2) moved = true;
+    panel.style.left = Math.max(5, Math.min(window.innerWidth - panel.offsetWidth - 5, startLeft + dx)) + 'px';
+    panel.style.top = Math.max(5, Math.min(window.innerHeight - panel.offsetHeight - 5, startTop + dy)) + 'px';
+  });
+
+  function stopDrag(){
+    if(!dragging) return;
+    dragging = false;
+    panel.classList.remove('dragging');
+  }
+  window.addEventListener('pointerup', stopDrag);
+  window.addEventListener('pointercancel', stopDrag);
+})();
+
+window.togglePanel = function(){
+  const panel = $('topPanel');
+  panel.classList.toggle('minimized');
+  $('minBtn').textContent = panel.classList.contains('minimized') ? '+' : '—';
+};
+
+/* Audio System */
+let audioCtx = null;
+function initAudio(){
+  try{
+    if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if(audioCtx.state === 'suspended') audioCtx.resume();
+  }catch(_){}
+}
+function playAlertSound(){
+  initAudio();
+  if(!audioCtx) return;
+  const now = audioCtx.currentTime;
+  for(let i=0;i<4;i++){
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    osc.type = 'sawtooth';
+    osc.frequency.value = i%2===0 ? 1100 : 750;
+    osc.connect(g); g.connect(audioCtx.destination);
+    g.gain.setValueAtTime(0.2, now + i*0.14);
+    osc.start(now + i*0.14); osc.stop(now + i*0.14 + 0.12);
+  }
+}
+function playShiftSound(){
+  initAudio();
+  if(!audioCtx) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(600, now);
+  osc.frequency.exponentialRampToValueAtTime(1200, now + 0.12);
+  g.gain.setValueAtTime(0.15, now);
+  g.gain.linearRampToValueAtTime(0.001, now + 0.14);
+  osc.connect(g); g.connect(audioCtx.destination);
+  osc.start(now); osc.stop(now + 0.15);
+}
+
+/* 2-Second High-Tech Cyber Data Parsing Sound */
+let hackSoundInterval = null;
+function startCyberHackSound(){
+  initAudio();
+  if(!audioCtx) return;
+  let ticks = 0;
+  hackSoundInterval = setInterval(()=>{
+    ticks++;
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    osc.type = ticks % 2 === 0 ? 'square' : 'sawtooth';
+    osc.frequency.setValueAtTime(300 + Math.random()*1200, now);
+    g.gain.setValueAtTime(0.06, now);
+    g.gain.linearRampToValueAtTime(0.001, now + 0.05);
+    osc.connect(g); g.connect(audioCtx.destination);
+    osc.start(now); osc.stop(now + 0.06);
+    if(ticks >= 24){
+      clearInterval(hackSoundInterval);
+      hackSoundInterval = null;
+    }
+  }, 80);
+}
+
+function playWinSound(){
+  initAudio();
+  if(!audioCtx) return;
+  const now = audioCtx.currentTime;
+  [880, 1174].forEach((f, i)=>{
+    const osc = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    osc.type = 'sine'; osc.frequency.setValueAtTime(f, now + i*0.13);
+    g.gain.setValueAtTime(0.001, now + i*0.13);
+    g.gain.linearRampToValueAtTime(0.08, now + i*0.13 + 0.02);
+    g.gain.linearRampToValueAtTime(0.001, now + i*0.13 + 0.22);
+    osc.connect(g); g.connect(audioCtx.destination);
+    osc.start(now + i*0.13); osc.stop(now + i*0.13 + 0.24);
+  });
+}
+
+function speakHindiError(){
+  if(!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance("आपका यूआईडी अप्रूव नहीं है। कृपया विपुल भाई से संपर्क करें।");
+  utter.lang = 'hi-IN';
+  utter.rate = 0.95;
+  try{ window.speechSynthesis.speak(utter); }catch(_){}
+}
+
+function showErrorAlert(){
+  $('errorAlert').classList.add('show');
+  playAlertSound();
+  speakHindiError();
+}
+window.closeErrorAlert = function(){
+  $('errorAlert').classList.remove('show');
+};
+
+/* Timing & Periods */
+function pad2(n){ return String(n).padStart(2,'0'); }
+function getUTCPeriod(){
+  const now = new Date(), y=now.getUTCFullYear(), mo=pad2(now.getUTCMonth()+1), d=pad2(now.getUTCDate()), h=now.getUTCHours(), mi=now.getUTCMinutes();
+  if(gameMode==='1min') return `${y}${mo}${d}1000${String(10001+h*60+mi).padStart(5,'0')}`;
+  const total = h*3600 + mi*60 + now.getUTCSeconds();
+  return `${y}${mo}${d}1000${String(50001+Math.floor(total/30)).padStart(5,'0')}`;
+}
+function getTargetPeriod(){
+  if(!lastProcessedIssue) return getUTCPeriod();
+  try{
+    const m = String(lastProcessedIssue).match(/^(.*?)(\d+)$/);
+    if(m) return m[1] + (BigInt(m[2]) + 1n).toString().padStart(m[2].length, '0');
+  }catch(_){}
+  return getUTCPeriod();
+}
+
+function updateClock(){
+  const sec = new Date().getUTCSeconds();
+  const rem = gameMode==='30sec' ? 30 - (sec % 30) : 60 - sec;
+  $('timer').textContent = pad2(rem);
+  
+  const currentTarget = getTargetPeriod();
+  $('periodId').textContent = currentTarget;
+
+  /* NEXT PERIOD ARRIVAL:
+     Re-arm button so user can click it for new prediction.
+     OLD PREDICTION REMAINS ON SCREEN until user clicks! */
+  if(unlockedForIssue && unlockedForIssue !== currentTarget){
+    isCurrentPeriodUnlocked = false;
+    unlockedForIssue = null;
+    resetHackButtonOnly();
+  }
+}
+setInterval(updateClock, 1000);
+
+/* ================= PREDICTION ENGINE (5 ENGINES + LEVEL 4+ REVERSE) ================= */
+const CHART_REF = {
+  "00":"B","01":"B","02":"B","03":"S","04":"B","05":"S","06":"S","07":"B","08":"S","09":"B",
+  "10":"B","11":"S","12":"S","13":"S","14":"S","15":"S","16":"S","17":"S","18":"B","19":"B",
+  "20":"S","21":"S","22":"S","23":"B","24":"S","25":"B","26":"S","27":"S","28":"B","29":"B",
+  "30":"S","31":"S","32":"B","33":"S","34":"S","35":"S","36":"B","37":"B","38":"B","39":"B",
+  "40":"S","41":"B","42":"S","43":"S","44":"S","45":"B","46":"B","47":"S","48":"B","49":"B",
+  "50":"S","51":"B","52":"B","53":"S","54":"B","55":"S","56":"S","57":"S","58":"S","59":"B",
+  "60":"S","61":"B","62":"B","63":"S","64":"B","65":"B","66":"S","67":"B","68":"S","69":"S",
+  "70":"B","71":"B","72":"S","73":"S","74":"B","75":"B","76":"S","77":"B","78":"B","79":"B",
+  "80":"B","81":"B","82":"S","83":"S","84":"B","85":"B","86":"B","87":"B","88":"B","89":"S",
+  "90":"S","91":"S","92":"B","93":"S","94":"S","95":"S","96":"S","97":"S","98":"B","99":"S"
+};
+
+const CHART_JACK = {
+  "00":"S","01":"B","02":"S","03":"S","04":"B","05":"S","06":"B","07":"B","08":"B","09":"B",
+  "10":"B","11":"B","12":"B","13":"S","14":"B","15":"S","16":"S","17":"B","18":"S","19":"S",
+  "20":"S","21":"S","22":"S","23":"B","24":"S","25":"B","26":"B","27":"B","28":"B","29":"B",
+  "30":"B","31":"B","32":"S","33":"B","34":"S","35":"B","36":"S","37":"S","38":"B","39":"S",
+  "40":"B","41":"S","42":"S","43":"S","44":"B","45":"S","46":"B","47":"S","48":"S","49":"B",
+  "50":"S","51":"S","52":"S","53":"B","54":"S","55":"S","56":"B","57":"B","58":"B","59":"S",
+  "60":"B","61":"B","62":"B","63":"B","64":"B","65":"S","66":"S","67":"S","68":"B","69":"S",
+  "70":"S","71":"S","72":"B","73":"B","74":"B","75":"S","76":"B","77":"B","78":"B","79":"B",
+  "80":"S","81":"B","82":"B","83":"S","84":"S","85":"B","86":"S","87":"B","88":"S","89":"B",
+  "90":"B","91":"S","92":"S","93":"S","94":"B","95":"S","96":"B","97":"S","98":"S","99":"B"
+};
+
+const personalStats = { wins:0, losses:0, currentLevel:1, highestWinLevel:0, pending:null };
+
+// Engine 1: Root Digit
+function calcRootSig(rows){
+  if(!Array.isArray(rows) || rows.length < 5) return null;
+  const five = rows.slice(0, 5).map(r => Number(r.number));
+  if(five.some(n => !Number.isFinite(n))) return null;
+  let cur = five.reduce((a, b) => a + b, 0);
+  while(cur > 9) cur = String(cur).split('').map(Number).reduce((a, b) => a + b, 0);
+  return cur >= 5 ? 'B' : 'S';
+}
+
+// Engine 2: Abs Add
+function calcAbsSig(rows){
+  if(!Array.isArray(rows) || rows.length < 10) return null;
+  const ten = rows.slice(0, 10).map(r => Number(r.number));
+  if(ten.some(n => !Number.isFinite(n))) return null;
+  const c1 = ten[0] - ten[1], c2 = ten[8] - ten[9];
+  let cur = Math.abs(c1) + Math.abs(c2);
+  while(cur >= 10) cur = String(cur).split('').map(Number).reduce((a, b) => a + b, 0);
+  return cur >= 5 ? 'B' : 'S';
+}
+
+// Engines 3, 4, 5: Pair Chart Lookups
+function calcChartSig(rows, chart){
+  if(!Array.isArray(rows) || rows.length < 2) return null;
+  const pair = String(rows[0].number) + String(rows[1].number);
+  const val = chart[pair];
+  return (val === 'B' || val === 'S') ? val : null;
+}
+
+// FINAL 5-ENGINE VOTING + LEVEL 4+ REVERSE CALCULATION
+function computeFinalVotingPrediction(rows, level){
+  if(!Array.isArray(rows) || rows.length < 5) return null;
+
+  const rootSig = calcRootSig(rows);
+  const absSig = calcAbsSig(rows);
+  const vipulSig = calcChartSig(rows, CHART_REF);
+  const makeoverSig = calcChartSig(rows, CHART_REF);
+  const jackSig = calcChartSig(rows, CHART_JACK);
+
+  const sigs = [rootSig, absSig, vipulSig, makeoverSig, jackSig].filter(s => s === 'B' || s === 'S');
+  if(sigs.length < 2) return null;
+
+  const bigCount = sigs.filter(s => s === 'B').length;
+  const smallCount = sigs.filter(s => s === 'S').length;
+
+  let baseSig = null;
+  if(bigCount > smallCount) baseSig = 'B';
+  else if(smallCount > bigCount) baseSig = 'S';
+  else return null;
+
+  // REVERSE RULE: Only reverse at Level 4 or higher
+  const shouldReverse = (level >= 4);
+  const finalSig = shouldReverse ? (baseSig === 'B' ? 'S' : 'B') : baseSig;
+
+  return finalSig === 'B' ? 'BIG' : 'SMALL';
+}
+
+/* ================= EXACT 3D BALL SVG (0 to 9) ================= */
+function generateBallSVG(num){
+  let baseFill = '';
+  let digitColor = '';
+  const numInt = Number(num);
+
+  if(numInt === 0){
+    baseFill = `
+      <defs>
+        <linearGradient id="split0" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="48%" stop-color="#ff334b" />
+          <stop offset="52%" stop-color="#a855f7" />
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill="url(#split0)" />
+    `;
+    digitColor = '#9333ea';
+  } else if(numInt === 5){
+    baseFill = `
+      <defs>
+        <linearGradient id="split5" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="48%" stop-color="#10b981" />
+          <stop offset="52%" stop-color="#a855f7" />
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="48" fill="url(#split5)" />
+    `;
+    digitColor = '#9333ea';
+  } else if([2, 4, 6, 8].includes(numInt)){
+    baseFill = `<circle cx="50" cy="50" r="48" fill="#ef4444" />`;
+    digitColor = '#dc2626';
+  } else {
+    baseFill = `<circle cx="50" cy="50" r="48" fill="#10b981" />`;
+    digitColor = '#059669';
+  }
+
+  return `
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="innerSphere" cx="42%" cy="38%" r="62%">
+          <stop offset="0%" stop-color="#ffffff" />
+          <stop offset="70%" stop-color="#f8fafc" />
+          <stop offset="100%" stop-color="#d1d5db" />
+        </radialGradient>
+        <linearGradient id="topGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+
+      <!-- Outer Colored Rim -->
+      ${baseFill}
+
+      <!-- Decorative White Outer Dots -->
+      <circle cx="50" cy="4" r="10" fill="#ffffff" opacity="0.9" />
+      <circle cx="50" cy="96" r="10" fill="#ffffff" opacity="0.9" />
+      <circle cx="4" cy="50" r="10" fill="#ffffff" opacity="0.9" />
+      <circle cx="96" cy="50" r="10" fill="#ffffff" opacity="0.9" />
+      <circle cx="17" cy="17" r="9" fill="#ffffff" opacity="0.8" />
+      <circle cx="83" cy="17" r="9" fill="#ffffff" opacity="0.8" />
+      <circle cx="17" cy="83" r="9" fill="#ffffff" opacity="0.8" />
+      <circle cx="83" cy="83" r="9" fill="#ffffff" opacity="0.8" />
+
+      <!-- Inner Glossy White Core -->
+      <circle cx="50" cy="50" r="32" fill="url(#innerSphere)" />
+      
+      <!-- Top Highlight Glass -->
+      <path d="M 24 35 Q 50 14 76 35 Q 50 24 24 35 Z" fill="url(#topGlass)" />
+
+      <!-- Center Number -->
+      <text x="50" y="62" 
+            text-anchor="middle" 
+            font-family="'Orbitron', sans-serif" 
+            font-size="34" 
+            font-weight="900" 
+            fill="${digitColor}">
+        ${num}
+      </text>
+    </svg>
+  `;
+}
+
+function renderBalls(rows){
+  const container = $('ballsRow');
+  if(!container) return;
+  const displayRows = rows.slice(0, 6);
+  container.innerHTML = '';
+  
+  displayRows.forEach(r => {
+    const wrap = document.createElement('div');
+    wrap.className = 'lottery-ball-wrap';
+    wrap.innerHTML = generateBallSVG(r.number);
+    container.appendChild(wrap);
+  });
+}
+
+function updatePrediction(){
+  if(!latestRows || latestRows.length < 5){
+    currentComputedPred = null;
+    return;
+  }
+
+  // Calculate latest prediction for current background state
+  currentComputedPred = computeFinalVotingPrediction(latestRows, personalStats.currentLevel);
+
+  renderBalls(latestRows);
+
+  const predEl = $('predValue');
+  
+  // IF user has unlocked current period, show the newly computed/revealed prediction
+  if(isCurrentPeriodUnlocked && unlockedForIssue === getTargetPeriod()){
+    predEl.textContent = lastRevealedPred || currentComputedPred || 'WAIT';
+    predEl.className = `pred-main-result ${lastRevealedPred || currentComputedPred || 'WAIT'}`;
+  } else {
+    // OLD PREDICTION REMAINS DISPLAYED until next click!
+    if(lastRevealedPred){
+      predEl.textContent = lastRevealedPred;
+      predEl.className = `pred-main-result ${lastRevealedPred}`;
+    } else {
+      predEl.textContent = 'LOCKED';
+      predEl.className = 'pred-main-result LOCKED';
+    }
+  }
+
+  if(!personalStats.pending && currentComputedPred){
+    personalStats.pending = { issue: getTargetPeriod(), pred: currentComputedPred, level: personalStats.currentLevel };
+  }
+}
+
+/* ==========================================================================
+   2-SECOND FULL-SYSTEM HACK ANIMATION SEQUENCE UPON "CLICK TO CONNECT"
+   Reveals NEW prediction; keeps previous prediction visible until clicked!
+   ========================================================================== */
+window.onConnectActionClick = function(){
+  const btn = $('hackConnectBtn');
+  if(isCurrentPeriodUnlocked) return;
+
+  initAudio();
+  startCyberHackSound();
+
+  // 1. Button Feedback
+  btn.classList.add('connecting-pulse');
+  btn.textContent = 'EXTRACTING...';
+
+  // 2. Balls Row Jumping Wave Animation + Number Scramble
+  const ballsRow = $('ballsRow');
+  ballsRow.classList.add('hacking-active');
+
+  const scrambleInterval = setInterval(()=>{
+    const wraps = ballsRow.querySelectorAll('.lottery-ball-wrap');
+    wraps.forEach(w => {
+      const rnd = Math.floor(Math.random() * 10);
+      w.innerHTML = generateBallSVG(rnd);
+    });
+  }, 100);
+
+  // 3. AI Prediction Box Text Scramble Glitch
+  const predEl = $('predValue');
+  predEl.className = 'pred-main-result hack-scramble';
+  const glitchWords = ['INJECTING..', '0x7F_SYNC', 'DECRYPTING', 'HASH_ROOT', 'BYPASS_OK', 'CALCULATING'];
+  let gwIdx = 0;
+  const wordInterval = setInterval(()=>{
+    predEl.textContent = glitchWords[gwIdx % glitchWords.length];
+    gwIdx++;
+  }, 160);
+
+  // EXACTLY 2 SECONDS HACK COMPLETION -> REVEAL NEW RESULT
+  setTimeout(()=>{
+    clearInterval(scrambleInterval);
+    clearInterval(wordInterval);
+
+    ballsRow.classList.remove('hacking-active');
+    btn.classList.remove('connecting-pulse');
+
+    // Restore real numbers
+    renderBalls(latestRows);
+
+    isCurrentPeriodUnlocked = true;
+    unlockedForIssue = getTargetPeriod();
+
+    // Assign & reveal NEW prediction
+    lastRevealedPred = currentComputedPred || 'BIG';
+
+    predEl.textContent = lastRevealedPred;
+    predEl.className = `pred-main-result ${lastRevealedPred}`;
+
+    // Freeze Button for current period
+    btn.classList.add('connected-freeze');
+    btn.textContent = '✓ CONNECTED';
+
+    playShiftSound();
+  }, 2000);
+};
+
+/* Resets ONLY the button to re-arm "CLICK TO CONNECT", but KEEPS the old prediction visible! */
+function resetHackButtonOnly(){
+  const btn = $('hackConnectBtn');
+  btn.classList.remove('connected-freeze', 'connecting-pulse');
+  btn.textContent = 'CLICK TO CONNECT';
+  // Note: predValue is intentionally NOT changed to 'LOCKED', it keeps showing old prediction!
+}
+
+/* Helper to reset entire state (only used on mode switch) */
+function fullResetState(){
+  isCurrentPeriodUnlocked = false;
+  unlockedForIssue = null;
+  lastRevealedPred = null;
+  const btn = $('hackConnectBtn');
+  btn.classList.remove('connected-freeze', 'connecting-pulse');
+  btn.textContent = 'CLICK TO CONNECT';
+  $('predValue').textContent = 'LOCKED';
+  $('predValue').className = 'pred-main-result LOCKED';
+}
+
+function resetLevelsUI(){
+  personalStats.currentLevel = 1;
+  personalStats.highestWinLevel = 0;
+  $('currentLevelDisplay').textContent = 'L1';
+  $('highestLevelDisplay').textContent = '—';
+}
+
+function settlePrediction(r){
+  if(!personalStats.pending) return;
+  if(String(r.issue) === String(personalStats.pending.issue)){
+    const actual = r.value === 'B' ? 'BIG' : 'SMALL';
+    const isWin = personalStats.pending.pred === actual;
+    if(isWin){
+      personalStats.wins++;
+      personalStats.highestWinLevel = Math.max(personalStats.highestWinLevel, personalStats.pending.level);
+      personalStats.currentLevel = 1;
+      triggerWin();
+    } else {
+      personalStats.losses++;
+      personalStats.currentLevel = Math.min(99, personalStats.currentLevel + 1);
+    }
+    personalStats.pending = null;
+    $('currentLevelDisplay').textContent = 'L' + personalStats.currentLevel;
+    $('highestLevelDisplay').textContent = personalStats.highestWinLevel > 0 ? 'L' + personalStats.highestWinLevel : '—';
+  }
+}
+
+function triggerWin(){
+  playWinSound();
+  const pop = $('winPopup');
+  pop.classList.add('show');
+  setTimeout(()=> pop.classList.remove('show'), 1200);
+}
+
+/* API Data Fetching */
+function generateDeterministicRows(count = 35){
+  const currentTarget = String(getTargetPeriod());
+  const rows = [];
+  const base = /^\d+$/.test(currentTarget) ? BigInt(currentTarget) - 1n : 20261110100010000n;
+  for(let i=count-1; i>=0; i--){
+    const issue = String(base - BigInt(i));
+    let hash = 0;
+    for(let c=0; c<issue.length; c++){ hash = ((hash << 5) - hash) + issue.charCodeAt(c); hash |= 0; }
+    const number = Math.abs(hash % 10);
+    rows.push({ issue, number, value: number >= 5 ? 'B' : 'S' });
+  }
+  return rows;
+}
+
+const API_ENDPOINTS = {
+  '1min': [
+    '/api/lottery/WinGo/WinGo_1M/GetHistoryIssuePage.json',
+    'https://draw.ar-lottery01.com/WinGo/WinGo_1M/GetHistoryIssuePage.json'
+  ],
+  '30sec': [
+    '/api/lottery/WinGo/WinGo_30S/GetHistoryIssuePage.json',
+    'https://draw.ar-lottery02.com/WinGo/WinGo_30S/GetHistoryIssuePage.json'
+  ]
+};
+
+async function pollAPI(){
+  if(busy) return;
+  busy = true;
+  try{
+    let fetched = null;
+    const endpoints = API_ENDPOINTS[gameMode];
+    for(const u of endpoints){
+      try{
+        const r = await fetch(u + '?ts=' + Date.now(), {cache:'no-store'});
+        if(r.ok){
+          const d = await r.json();
+          if(d && d.data && d.data.list){
+            fetched = d.data.list.map(x=>({ issue: String(x.issueNumber), number:+x.number, value:+x.number>=5?'B':'S' }));
+            break;
+          }
+        }
+      }catch(_){}
+    }
+
+    const rows = (fetched && fetched.length) ? fetched : generateDeterministicRows(30);
+    latestRows = rows;
+    const newest = rows[0];
+
+    if(lastProcessedIssue && newest.issue !== lastProcessedIssue){
+      settlePrediction(newest);
+    }
+    lastProcessedIssue = newest.issue;
+    updatePrediction();
+  }catch(e){
+    console.error(e);
+  }finally{
+    busy = false;
+  }
+}
+
+function startPolling(){
+  pollAPI();
+  if(pollHandle) clearInterval(pollHandle);
+  pollHandle = setInterval(pollAPI, 3500);
+}
+
+/* WINGO 1M / 30S SHIFT BUTTON */
+window.switchMode = function(m){
+  if(m === gameMode) return;
+  gameMode = m;
+
+  playShiftSound();
+
+  const btn1 = $('oneMinBtn');
+  const btn30 = $('thirtySecBtn');
+  const activeBtn = m === '1min' ? btn1 : btn30;
+
+  btn1.classList.toggle('active', m === '1min');
+  btn30.classList.toggle('active', m === '30sec');
+
+  btn1.classList.remove('burst-anim');
+  btn30.classList.remove('burst-anim');
+  void activeBtn.offsetWidth;
+  activeBtn.classList.add('burst-anim');
+  setTimeout(()=> activeBtn.classList.remove('burst-anim'), 550);
+
+  $('modLabel').textContent = m === '1min' ? 'WINGO 1M' : 'WINGO 30S';
+
+  lastProcessedIssue = null;
+  personalStats.pending = null;
+  resetLevelsUI();
+
+  fullResetState();
+  startPolling();
+  updateClock();
+};
+
+/* Auth Interaction (Click to Verify) */
+$('connectBtn').addEventListener('click', async ()=>{
+  initAudio();
+  const val = $('uidInput').value.trim();
+  if(!val){
+    $('uidMsg').textContent = 'PLEASE ENTER UID';
+    return;
+  }
+  $('uidMsg').textContent = 'VERIFYING RAXXI PROTOCOLS...';
+  $('uidBox').style.display = 'none';
+  $('connectingState').classList.add('show');
+
+  try{
+    const res = await window.verifyAdminAccess(val);
+    if(res.ok){
+      $('connectingState').classList.remove('show');
+      $('verifiedContent').style.display = 'flex';
+      resetLevelsUI();
+      resetHackButtonOnly();
+      startPolling();
+    } else {
+      $('connectingState').classList.remove('show');
+      $('uidBox').style.display = 'flex';
+      $('uidMsg').textContent = res.reason;
+      if(res.errorType === 'not_approved') showErrorAlert();
+    }
+  }catch(_){
+    $('connectingState').classList.remove('show');
+    $('uidBox').style.display = 'flex';
+    $('uidMsg').textContent = 'GATEWAY TIMEOUT';
+  }
+});
+
+/* ================= REALISTIC HACKER OPENING HUD ================= */
+(function(){
+  const consoleEl = $('hackConsole');
+  const fill = $('hackFill');
+  const pct = $('hackPercent');
+  const statusEl = $('hackStatusText');
+  const hudHash = $('hudHashRate');
+  const hudMem = $('hudMemSeed');
+  const hudExfil = $('hudExfil');
+
+  const hackLogs = [
+    { pct: 12, line: '> [INIT] INJECTING SSL BYPASS TO PORT 443...', cls: '' },
+    { pct: 24, line: '> [CLOUDFLARE] WAF RULES OVERRIDDEN [STATUS 200]', cls: 'gold' },
+    { pct: 40, line: '> [AUTH] FORCING ADMIN SEED EXTRACTION ON 104.21.72.18...', cls: '' },
+    { pct: 58, line: '> [DECRYPT] EXTRACTING SHA-256 HASH FROM RAXXI RNG SEED...', cls: 'crit' },
+    { pct: 74, line: '> [EXFIL] DUMPING WINGO LIVE DRAW MEMORY BLOCKS...', cls: '' },
+    { pct: 88, line: '> [SUCCESS] LIVE RESULT PACKETS INTERCEPTED (48,192 KB)', cls: 'gold' },
+    { pct: 100, line: '> [COMPLETE] ROOT EXFILTRATION ACTIVE. SYSTEM COMPROMISED.', cls: 'crit' }
+  ];
+
+  let p = 0;
+  let logIdx = 0;
+
+  const timer = setInterval(()=>{
+    p += 2.5;
+    if(fill) fill.style.width = Math.min(100, p) + '%';
+    if(pct) pct.textContent = Math.floor(Math.min(100, p)) + '%';
+
+    if(hudHash) hudHash.textContent = (1.2 + Math.random()*0.8).toFixed(2) + ' GH/s';
+    if(hudMem) hudMem.textContent = '0x' + Math.floor(Math.random()*16777215).toString(16).toUpperCase();
+    if(hudExfil) hudExfil.textContent = (p * 0.48).toFixed(1) + ' MB';
+
+    if(logIdx < hackLogs.length && p >= hackLogs[logIdx].pct){
+      const l = hackLogs[logIdx];
+      const div = document.createElement('div');
+      div.className = 'console-line ' + l.cls;
+      div.textContent = l.line;
+      consoleEl.appendChild(div);
+      statusEl.textContent = l.line.replace('> ', '');
+      logIdx++;
+    }
+
+    if(p >= 100){
+      clearInterval(timer);
+      setTimeout(()=>{
+        const loader = $('spiderLoader');
+        loader.style.opacity = '0';
+        setTimeout(()=> loader.style.display = 'none', 600);
+      }, 500);
+    }
+  }, 50);
+})();
+
+// Bootstrap
+updateClock();
+resetLevelsUI();
+latestRows = generateDeterministicRows(30);
+renderBalls(latestRows);
+</script>
+</body>
+</html>
